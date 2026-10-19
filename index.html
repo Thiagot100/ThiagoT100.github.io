@@ -43,6 +43,20 @@
       border-radius: 12px;
       width: 260px;
     }
+    /* NOVO: caixa do vídeo no formato 16:9, se ajusta ao celular */
+    .video {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .video iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
     footer { padding: 25px; color: #888; font-size: 0.9rem; }
   </style>
 </head>
@@ -61,6 +75,15 @@
       <div class="card"><h3>🎮 Games</h3><p>Novidades de todas as plataformas.</p></div>
       <div class="card"><h3>📱 Android</h3><p>Jogos e apps para celular.</p></div>
       <div class="card"><h3>🛠️ Tutoriais</h3><p>Passo a passo de dicas e truques.</p></div>
+    </div>
+  </section>
+
+  <!-- NOVO: playlist de uploads do canal (UU + ID do canal) -->
+  <section>
+    <h2>Últimos vídeos</h2>
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/videoseries?list=UUWpQG60qwGuFdy_UYzen2rA"
+        title="Últimos vídeos do T Gamer 77" allowfullscreen></iframe>
     </div>
   </section>
 
